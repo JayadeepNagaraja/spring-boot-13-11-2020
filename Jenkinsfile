@@ -27,7 +27,7 @@ agent any
      } 
      stage('Run Container'){
        steps{
-        bat 'docker run -p 8080:8080 sharadrajore/my-app:2.0.0'
+        bat 'docker run -p 8080:8080 -d sharadrajore/my-app:2.0.0'
       }
     }
     
