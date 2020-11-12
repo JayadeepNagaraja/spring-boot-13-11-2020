@@ -9,7 +9,7 @@ agent any
     }
     stage('Deploy'){
       steps{
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-users', path: '', url: '')], contextPath: 'spring-boot', war: '**/*.war'
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-users', path: '', url: 'http://localhost:8080/')], contextPath: 'spring-boot', war: '**/*.war'
       }
     }
     
