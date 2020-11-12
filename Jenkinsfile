@@ -13,7 +13,7 @@ agent any
       }
     }
     stage('Build Docker Image'){
-      docker build -t sharadrajore/my-app:2.0.0 .
+      bat 'docker build -t sharadrajore/my-app:2.0.0 .'
     }
     
   }
